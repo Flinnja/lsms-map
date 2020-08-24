@@ -14,8 +14,6 @@
 	else if (href.includes("#interviews-section")) {currentSlide = 4}
 	else if (href.includes("#about-section")) {currentSlide = 5};
 
-	console.log (currentSlide);
-
   var isAnimating = false;
 
   var stopAnimation = function() {
