@@ -12,31 +12,33 @@
 
 	<body>
 		<header class="site-header"></header>
-		<div id="main-body">
-			<section data-section-index="0" id="main-menu-section">
-				{% include main-menu.html %}
-			</section>
 
-			<section data-section-index="1" id="resource-links-section">
-				{% include resource-links.html %}
-			</section>
-
-			<section data-section-index="2" id="testimonials-section">
-				{% include testimonials.html %}
-			</section>
-
-			<section data-section-index="3" id="mentorship-programme-section">
-				{% include mentorship-programme.html %}
-			</section>
-
-			<section data-section-index="4" id="interviews-section">
-				{% include interviews.html %}
-			</section>
-
-			<section data-section-index="5" id="about-section">
-				{% include about.html %}
-			</section>
-
+		<div data-section-index="0" id="main-menu-section" class="section">
+			{% include main-menu.html %}
 		</div>
+
+		<div data-section-index="1" id="resource-links-section" class="section">
+			{% include resource-links.html %}
+		</div>
+
+		<div data-section-index="2" id="testimonials-section" class="section">
+			{% include testimonials.html %}
+		</div>
+
+		<div data-section-index="3" id="mentorship-programme-section" class="section">
+			{% include mentorship-programme.html %}
+		</div>
+
+		<div data-section-index="4" id="interviews-section" class="section">
+			{% include interviews.html %}
+		</div>
+
+		<div data-section-index="5" id="about-section" class="section">
+			{% include about.html %}
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="assets/js/section-scroller.js"></script>
+		<script src="assets/js/linkto-scroller.js"></script>
 	</body>
 </html>
