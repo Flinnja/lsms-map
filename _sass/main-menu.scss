@@ -1,5 +1,6 @@
 #main-menu-section {
 	height: 100vh;
+	padding: 0;
 }
 
 .menu-container {
@@ -77,13 +78,20 @@
   transform: none;
 
   ul {
-  	padding: 15px 0;
+  	padding: 0;
+  	@media (min-width: 768px) {
+	  	padding: 15px 0;
+		}
   }
 
 	li {
-		font-size: 1.5em;
-		margin: 10px 20px;
+		font-size: .8em;
+		margin: 10px 5px;
 		display: inline;
+		@media (min-width: 768px) {
+			font-size: 1.5em;
+			margin: 10px 20px;
+		}
 	}
 }
 
