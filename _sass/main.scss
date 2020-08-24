@@ -39,8 +39,7 @@ ul {
 a {
   color: $base-red;
   text-decoration: none;
-  &:hover,
-  &:focus {
+  &:hover {
     color: $base-orange;
     outline: 0;
   }

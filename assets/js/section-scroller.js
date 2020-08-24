@@ -17,6 +17,7 @@
   var isAnimating = false;
 
   var stopAnimation = function() {
+    changeTopic(currentSlide);
     setTimeout(function() {
       isAnimating = false;
     }, 300);
@@ -32,8 +33,19 @@
     return rect.top >= 0;
   };
 
+  var changeTopic = function(topicIndex) {
+    if (topicIndex == 0){
+      $(".menu-link").removeClass("active");
+    }
+    else {
+      $('[data-nav-link-index="' + topicIndex + '"]').siblings("li").removeClass("active");
+      $('[data-nav-link-index="' + topicIndex + '"]').addClass("active");
+    }
+  }
+
   $(".menu-link").click(function() {
   	currentSlide = $(this).data("nav-link-index");
+    changeTopic(currentSlide);
   });
 
   document.addEventListener("wheel", function(event) {
