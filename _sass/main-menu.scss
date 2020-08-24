@@ -9,13 +9,14 @@
 	background: white;
 	border-radius: 20px;
 	text-align: center;
-	position: sticky;
+	position: fixed;
 	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
+	left: 50%;
+	-webkit-transform: translateY(-50%) translateX(-50%);
+	-moz-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  -o-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
 
   transition: 0.4s ease;
 
@@ -64,15 +65,16 @@
 
 .menu-scrolled {
 	top: 0;
+	left: 0;
 	width: 100vw;
 	max-width: 100vw;
 	height: auto;
 	border-radius: 0;
-	-webkit-transform: translateY(0);
-	-moz-transform: translateY(0);
-  -ms-transform: translateY(0);
-  -o-transform: translateY(0);
-  transform: translateY(0);
+	-webkit-transform: none;
+	-moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
 
 	li {
 		display: inline;

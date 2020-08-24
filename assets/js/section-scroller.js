@@ -4,20 +4,21 @@
   var $slides = $(selector);
   var href = window.location.href;
 
+  var pathnames = ["/","/#resource-links-section","/#testimonials-section","/#mentorship-programme-section","/#interviews-section","/#about-section"]
+
   console.log (href);
 
   var currentSlide = 0;
 
-  if (href.includes("#resource-links-section")) {currentSlide = 1}
-  else if (href.includes("#testimonials-section")) {currentSlide = 2}
-	else if (href.includes("#mentorship-programme-section")) {currentSlide = 3}
-	else if (href.includes("#interviews-section")) {currentSlide = 4}
-	else if (href.includes("#about-section")) {currentSlide = 5};
+  if (href.includes(pathnames[1])) {currentSlide = 1}
+  else if (href.includes(pathnames[2])) {currentSlide = 2}
+	else if (href.includes(pathnames[3])) {currentSlide = 3}
+	else if (href.includes(pathnames[4])) {currentSlide = 4}
+	else if (href.includes(pathnames[5])) {currentSlide = 5};
 
   var isAnimating = false;
 
   var stopAnimation = function() {
-    changeTopic(currentSlide);
     setTimeout(function() {
       isAnimating = false;
     }, 300);
@@ -41,7 +42,10 @@
       $('[data-nav-link-index="' + topicIndex + '"]').siblings("li").removeClass("active");
       $('[data-nav-link-index="' + topicIndex + '"]').addClass("active");
     }
+    window.history.pushState('obj', 'newtitle', window.location.protocol + pathnames[topicIndex]);
   }
+
+  $(document).ready(changeTopic(currentSlide));
 
   $(".menu-link").click(function() {
   	currentSlide = $(this).data("nav-link-index");
@@ -67,6 +71,7 @@
         var $slide = $($slides[currentSlide]);
         var offsetTop = $slide.offset().top;
         isAnimating = true;
+        changeTopic(currentSlide);
         $("html, body").animate(
           {
             scrollTop: offsetTop
@@ -83,6 +88,7 @@
         var $slide = $($slides[currentSlide]);
         var offsetTop = $slide.offset().top;
         isAnimating = true;
+        changeTopic(currentSlide);
         $("html, body").animate(
           {
             scrollTop: offsetTop
