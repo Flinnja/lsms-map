@@ -42,7 +42,6 @@
       $('[data-nav-link-index="' + topicIndex + '"]').siblings("li").removeClass("active");
       $('[data-nav-link-index="' + topicIndex + '"]').addClass("active");
     }
-    window.history.pushState('obj', 'newtitle', window.location.protocol + pathnames[topicIndex]);
   }
 
   $(document).ready(changeTopic(currentSlide));
