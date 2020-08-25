@@ -19,24 +19,20 @@
 			<h1 class="main-page-heading"> Dance Care Map</h1>
 		</div>
 
-		<div data-section-index="1" id="resource-links-section" class="section">
+		<div data-section-index="1" id="about-section" class="section">
+			{% include about.html %}
+		</div>
+
+		<div data-section-index="2" id="resource-links-section" class="section">
 			{% include resource-links.html %}
 		</div>
 
-		<div data-section-index="2" id="testimonials-section" class="section">
+		<div data-section-index="3" id="testimonials-section" class="section">
 			{% include testimonials.html %}
-		</div>
-
-		<div data-section-index="3" id="mentorship-programme-section" class="section">
-			{% include mentorship-programme.html %}
 		</div>
 
 		<div data-section-index="4" id="interviews-section" class="section">
 			{% include interviews.html %}
-		</div>
-
-		<div data-section-index="5" id="about-section" class="section">
-			{% include about.html %}
 		</div>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

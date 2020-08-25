@@ -44,7 +44,9 @@
     }
   }
 
-  $(document).ready(changeTopic(currentSlide));
+  $(document).ready(function(){
+    changeTopic(currentSlide);
+  });
 
   $(".menu-link").click(function() {
   	currentSlide = $(this).data("nav-link-index");

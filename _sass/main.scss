@@ -82,7 +82,7 @@ p {
 
 .section{
 	padding: calc(52px + 4vw) 7vw 7vw 7vw;
-	height: calc(100vh - 52px - 11vw);
+	min-height: calc(100vh - 52px - 11vw);
 	@media (min-width: 768px) {
 		padding: calc(92px + 4vw) 7vw 7vw 7vw;
 		height: calc(100vh - 92px - 11vw);
