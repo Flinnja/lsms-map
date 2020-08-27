@@ -6,7 +6,7 @@ html {
 body {
 	margin: 0;
 	font-family: $font-header;
-	background: $base-yellow;
+	background: $base-grey-warm;
 }
 
 .clearfix {
@@ -81,6 +81,10 @@ p {
 }
 
 .section{
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
 	padding: calc(52px + 4vw) 7vw 7vw 7vw;
 	min-height: calc(100vh - 52px - 11vw);
 	@media (min-width: 768px) {
@@ -89,8 +93,12 @@ p {
 	}
 }
 
+.active-section{
+	display: block;
+}
+
 .content-container {
-		background: white;
+		background: $base-white;
 		border-radius: 20px;
 		width: 100%;
 		height: auto;
