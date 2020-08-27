@@ -3,39 +3,15 @@
 ---
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Less Sermon, More Song</title>
-		<meta name="description" content="A repository of mental health resources and support for dancers in New Zealand">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Lato:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="assets/css/styles.css">
-	</head>
+	{% include head.html %}
 
 	<body>
-		<header class="site-header"></header>
+		<header class="site-header-space"></header>
 
 		{% include main-menu.html %}
-		<div data-section-index="0" id="main-menu-section" class="section active-section">
+		<div data-section-index="0" id="main-menu-section" class="section">
 			<h1 class="main-page-heading"> Dance Care Map</h1>
 		</div>
 
-		<div data-section-index="1" id="about-section" class="section">
-			{% include about.html %}
-		</div>
-
-		<div data-section-index="2" id="resource-links-section" class="section">
-			{% include resource-links.html %}
-		</div>
-
-		<div data-section-index="3" id="testimonials-section" class="section">
-			{% include testimonials.html %}
-		</div>
-
-		<div data-section-index="4" id="interviews-section" class="section">
-			{% include interviews.html %}
-		</div>
-
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src="assets/js/section-changer.js"></script>
 	</body>
 </html>

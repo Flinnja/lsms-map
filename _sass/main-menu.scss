@@ -1,7 +1,10 @@
 #main-menu-section {
 	position: relative;
-	height: 100vh;
 	padding: 0;
+	top: 55px;
+	@media (min-width: 768px) {
+		top: 35px;
+	}
 }
 
 .menu-container {
@@ -20,8 +23,6 @@
   -ms-transform: translateY(-50%) translateX(-50%);
   -o-transform: translateY(-50%) translateX(-50%);
   transform: translateY(-50%) translateX(-50%);
-
-  transition: 0.4s ease;
 
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
 	   /* IE10+ CSS */
@@ -50,7 +51,6 @@
 				height: 2px;
 				width: 0px;
 				background: transparent;
-				transition: width .5s ease, background-color .5s ease;
 			}
 		}
 	}

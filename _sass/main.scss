@@ -5,8 +5,9 @@ html {
 
 body {
 	margin: 0;
+	height: 100%;
 	font-family: $font-header;
-	background: $base-grey-warm;
+	background: $base-grey-cold;
 }
 
 .clearfix {
@@ -43,10 +44,6 @@ h1 {
 	position: relative;
 	text-align: center;
 	top: 0%;
-	padding-top: 55px;
-	@media (min-width: 768px) {
-		padding-top: 30px;
-	}
 }
 
 h2 {
@@ -81,26 +78,23 @@ p {
 }
 
 .section{
-	position: fixed;
-	top: 0;
+	position: absolute;
+	top: 52px;
 	left: 0;
-	display: none;
-	padding: calc(52px + 4vw) 7vw 7vw 7vw;
+	padding: 4vw 7vw 7vw 7vw;
 	min-height: calc(100vh - 52px - 11vw);
+	height: auto;
 	@media (min-width: 768px) {
-		padding: calc(92px + 4vw) 7vw 7vw 7vw;
-		height: calc(100vh - 92px - 11vw);
+		top: 91px;
+		padding: 4vw 7vw 7vw 7vw;
+		min-height: calc(100vh - 92px - 11vw);
 	}
-}
-
-.active-section{
-	display: block;
 }
 
 .content-container {
-		background: $base-white;
-		border-radius: 20px;
-		width: 100%;
-		height: auto;
-		margin: 1em 0;
-	}
+	background: $base-white;
+	border-radius: 20px;
+	width: 100%;
+	height: auto;
+	margin: 1em 0;
+}
