@@ -108,3 +108,16 @@ p {
 	height: auto;
 	margin: 1em 0;
 }
+
+.wide-container {
+	margin-left: -7vw;
+	width: 100vw;
+	border-radius: 0;
+}
+
+.page-description {
+	padding: 15px 7vw;
+	@media (min-width: 768px) {
+		background: $base-grey-cold;
+	}
+}
