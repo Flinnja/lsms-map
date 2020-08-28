@@ -41,27 +41,13 @@
 		margin: 20px 0px;
 		a{
 			position: relative;
-			&:after {
-				content: '';
-				display: block;
-				position: absolute;
-				margin: 0 auto;
-				left: 0;
-				right: 0;
-				height: 2px;
-				width: 0px;
-				background: transparent;
-			}
 		}
 	}
 
 	li.active {
 		a {
 			color: $base-orange;
-			&:after {
-				width: 100%;
-				background-color: $base-orange;
-			}
+			text-decoration: underline;
 		}
 	}
 }
