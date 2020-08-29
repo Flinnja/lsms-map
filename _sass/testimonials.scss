@@ -1,2 +1,44 @@
 #testimonials-section {
+	height: auto;
+	.testimonials-list {
+		text-align: center;
+		.testimonials-item {
+			display: block;
+			height: auto;
+			overflow-y: auto;
+			width: 100%;
+			max-width: 86vw;
+
+			.testimonial-item-text {
+				text-align: left;
+				display: block;
+				margin: .5em 1em;
+				@media (min-width: 958px) {
+					text-align: right;
+				}
+				.testimonial-link {
+					display: inline;
+					text-align: left;
+					margin: 0 1em 0 0;
+					@media (min-width: 958px) {
+						float: left;
+						padding-bottom: .4em;
+					}
+				}
+				.testimonial-short-description {
+					display: inline;
+					color: black;
+					font-style: italic;
+					margin: 2px 1em 0 0;
+					@media (min-width: 958px) {
+						float: right;
+					}
+					&::hover {
+						color: black;
+					}
+				}
+			}
+		}
+	}
+
 }
