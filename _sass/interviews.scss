@@ -1,9 +1,30 @@
 #interviews-section {
-	.podcast-player-container {
-		width: auto;
+	.podcast-list {
 		text-align: center;
-	}
-	.podcast-player {
-		max-width: 86vw;
+
+		.podcast-player-container {
+			width: 400px;
+			max-width: 86vw;
+			margin-bottom: 2em;
+			display: inline-block;
+
+			@media (min-width: 768px) {
+				margin: 0 1vw 2em 1vw;
+			}
+
+			.podcast-player {
+				max-width: 86vw;
+			}
+
+			.podcast-description {
+				display: block;
+				margin-top: -4px;
+				width: 400px;
+				max-width: 86vw;
+				border-radius: 0 0 20px 20px;
+				font-size: .8em;
+			}
+		}
+
 	}
 }
