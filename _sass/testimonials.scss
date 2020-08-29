@@ -8,6 +8,11 @@
 			overflow-y: auto;
 			width: 100%;
 			max-width: 86vw;
+			border: 2px solid $base-grey-cold;
+
+			&:hover {
+				border-color: $base-orange !important;
+			}
 
 			.testimonial-item-text {
 				text-align: left;
@@ -32,9 +37,6 @@
 					margin: 2px 1em 0 0;
 					@media (min-width: 958px) {
 						float: right;
-					}
-					&::hover {
-						color: black;
 					}
 				}
 			}
