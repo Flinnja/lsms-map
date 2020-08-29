@@ -22,7 +22,10 @@
 				width: 400px;
 				max-width: 86vw;
 				border-radius: 0 0 20px 20px;
-				font-size: .8em;
+
+				.podcast-description-text {
+					font-size: 1.1em;
+				}
 			}
 		}
 
