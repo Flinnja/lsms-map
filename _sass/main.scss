@@ -87,7 +87,7 @@ img {
 		display: block;
 		margin: 1.2em 7vw;
 	}
-	@media (min-width: 768px) {
+	@media (min-width: 1024px) {
 		display: inline-block;
 		margin: 0;
 	}
@@ -133,7 +133,7 @@ img {
 
 	p {
 		background: $base-white;
-		@media (min-width: 768px) {
+		@media (min-width: 1024px) {
 			background: 0;
 		}
 	}
@@ -141,7 +141,7 @@ img {
 
 .page-description {
 	padding: 15px 7vw;
-	@media (min-width: 768px) {
+	@media (min-width: 1024px) {
 		background: $base-grey-cold;
 	}
 }

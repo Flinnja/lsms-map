@@ -2,21 +2,21 @@
 	height: auto;
 
 	.testimonials-container {
-		@media (min-width: 768px) {
+		@media (min-width: 1024px) {
 			overflow: hidden;
 			background: 0;
 			height: auto;
 		}
 	}
 	.testimonials-description {
-		@media (min-width: 768px) {
+		@media (min-width: 1024px) {
 			display: inline-block;
 			padding-right: 2vw;
 			max-width: 52vw;
 		}
 	}
 	.testimonials-image {
-		@media (min-width: 768px) {
+		@media (min-width: 1024px) {
 			float: right;
 			padding-right: 7vw;
 			max-width: 32vw;
