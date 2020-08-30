@@ -8,7 +8,9 @@
 			overflow-y: auto;
 			width: 100%;
 			max-width: 86vw;
-			border: 2px solid $base-grey-cold;
+			border: 1px solid $base-grey-cold;
+			margin: .5em 0;
+			border-radius: 10px;
 
 			&:hover {
 				border-color: $base-orange !important;
