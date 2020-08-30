@@ -77,6 +77,22 @@ p {
 	margin: 0;
 }
 
+img {
+	max-width: 86vw;
+}
+
+.description-image {
+	display: none;
+	@media (min-width: 412px) {
+		display: block;
+		margin: 1.2em 7vw;
+	}
+	@media (min-width: 768px) {
+		display: inline-block;
+		margin: 0;
+	}
+}
+
 .header {
 	height: 52px;
 	@media (min-width: 768px) {
@@ -113,6 +129,14 @@ p {
 	margin-left: -7vw;
 	width: 100vw;
 	border-radius: 0;
+	background: 0;
+
+	p {
+		background: $base-white;
+		@media (min-width: 768px) {
+			background: 0;
+		}
+	}
 }
 
 .page-description {
