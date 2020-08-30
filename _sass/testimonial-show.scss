@@ -1,8 +1,17 @@
 .testimonial-show {
 	.testimonial-show-container {
-		margin-top: 2em;
+		margin-top: 1em;
 		padding: .5em 7vw;
 		width: 100%;
 		background-color: $base-white;
+	}
+	.back-to-list-link {
+		font-size: .5em;
+		display: block;
+
+		@media (min-width: 768px) {
+			float: right;
+			padding-top: .75em;
+		}
 	}
 }
